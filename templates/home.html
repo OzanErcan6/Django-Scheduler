@@ -12,13 +12,19 @@
       </tr>
     </thead>
     <tbody>
+      {% if boards.all %}
       {% for board in boards %}
         <tr>
           <td>
             <a href="{% url 'board_topics' board.pk %}">{{board.name}}</a>
         </tr>
       {% endfor %}
-
+      {% else %}
+      <tr>
+        <td>
+          <a>There is no room in the database. Please add some rooms in the Admin Panel.</a>
+      </tr>
+      {% endif %}
     </tbody>
   </table>
 
