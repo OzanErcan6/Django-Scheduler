@@ -13,23 +13,27 @@ Install the requirements:
 pip install -r requirements.txt
 ```
 
-Make migrations:
-
-```bash
-python manage.py makemigrations
-```
-
 Create the database:
 
 ```bash
 python manage.py migrate
 ```
 
-Finally, run the development server:
+create super user with this command :
+
+```bash
+python manage.py createsuperuser
+```
+
+run the development server:
 
 ```bash
 python manage.py runserver
 ```
 
-The project will be available at **127.0.0.1:8000**.
+create rooms in the admin panel. 
+```bash
+127.0.0.1:8000/admin
+```
 
+The project will be available at **127.0.0.1:8000**.
