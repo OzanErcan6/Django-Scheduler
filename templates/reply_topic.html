@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Delete{% endblock %}
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+  <li class="breadcrumb-item"><a href="{% url 'topic_posts' topic.board.pk topic.pk %}">{{ topic.subject }}</a></li>
+  <li class="breadcrumb-item active">Delete</li>
+{% endblock %}
+
+{% block content %}
+
+   <form method="post" novalidate>
+    {% csrf_token %}
+    {% include 'includes/form.html' %}
+    Are you sure ?
+       <br>
+       <br>
+    <button type="submit" class="btn btn-danger">Yes</button>
+  </form>
+    <br>
+    <button class="btn btn-secondary" onclick=location.href="{% url 'topic_posts'  topic.board.pk topic.pk %}">No</button>
+{% endblock %}

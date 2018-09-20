@@ -1,0 +1,5 @@
+Django==1.11.4
+django-widget-tweaks==1.4.1
+django-bootstrap-datepicker-plus
+django-bootstrap3
+django-filer

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {{ board.name }} - {{ block.super }}
+{% endblock %}
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+
+{% endblock %}
+
+{% block content %}
+<p><span style="font-size: x-large; color: red; ">Reservation deleted successfully</span></p>
+    <button class="btn btn-secondary" onclick=location.href="{% url 'board_topics' board.pk %}">Back to Home</button>
+
+{% endblock %}

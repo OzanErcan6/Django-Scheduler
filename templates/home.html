@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome!</h1>
+    <h1>Scheduler helps you arrange meetings.</h1>
+    <p1>Select a Room:</p1>
+
+
+    <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+      </tr>
+    </thead>
+    <tbody>
+      {% for board in boards %}
+        <tr>
+          <td>
+            <a href="{% url 'board_topics' board.pk %}">{{board.name}}</a>
+        </tr>
+      {% endfor %}
+
+    </tbody>
+  </table>
+
+{% endblock %}
