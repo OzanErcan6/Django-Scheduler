@@ -3,10 +3,6 @@
 
 First, clone the repository to your local machine:
 
-```bash
-git clone git@github.com:sibtc/django-beginners-guide.git
-```
-
 Install the requirements:
 
 ```bash
