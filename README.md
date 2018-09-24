@@ -10,30 +10,30 @@ git clone https://github.com/xxozmozxx2/scheduler.git
 Install the requirements:
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 Create the database:
 
 ```bash
-python manage.py migrate
+python3 manage.py migrate
 ```
 
 create super user with this command :
 
 ```bash
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 ```
 
 run the development server:
 
 ```bash
-python manage.py runserver
+sudo python3 manage.py runserver 0.0.0.0:80
 ```
 
 create rooms in the admin panel. 
 ```bash
-127.0.0.1:8000/admin
+127.0.0.1/admin
 ```
 
-The project will be available at **127.0.0.1:8000**.
+The project will be available at **127.0.0.1**.
