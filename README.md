@@ -1,3 +1,5 @@
+Django app for scheduling meeting rooms for companies
+
 
 ## Running the Project Locally
 
